@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Introduction */
+.introduction{
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/banner.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+nav img{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+nav{
+    display: flex;
+}
+nav ul {
+    right:0%;
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+    margin-right: 130px;
+}
+nav ul li {
+    padding-left: 30px;
+    list-style-type: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+    font-size: 13px; 
+    position: relative;
+    
+}
+nav ul li a:after{
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: red;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+.visit-us{
+    text-align: center;  
+    margin: 11% 6%; 
+    justify-content: space-between;
+    display: block;
+}
+.visit-us h1{
+    color: white;
+    font-size: 62px;
+    padding-bottom: 2rem;
+}
+.visit-us p{
+    font-size: 14px;
+    color: white;
+    padding-bottom: 4rem;
+    font-weight: 300; 
+    line-height: 22px;
+}
+.visit-us a{
+    padding: 0.8rem 2rem;
+    font-size: 13px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+    transition: 1s;
+    
+}
+.visit-us a:hover{  
+    background-color: #1277DC;
+}
+/* Offers */
+/* commun code */
+.Offers , .Global-Campus , .facilites , .student-comments{
+    text-align: center;
+    margin: 8% 10%;
+}
+.Offers h1 , .Campus h1 , .facilites h1 , .Students h1{
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 2%;
+}
+.Offers p , .Campus p , .facilites p ,.Students p{
+    padding-bottom: 4%;
+    font-weight: 300;
+}
+.Courses-Text , .campus-photos , .facilities-photo , .reviews{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+/* commun code */
+.campus-photos{
+    column-gap: 25px;
+}
+#Undergraduate-programs , #Graduate-Programs ,#Post-Graduation{
+    background-color: #F8ECEC ;
+    border-radius: 10px 5%;
+    transition: 0.5s;
+}
+#Undergraduate-programs:hover , #Graduate-Programs:hover ,#Post-Graduation:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Courses-Text h2{
+    font-size: 16px;
+    padding: 7%;
+}
+.Courses-Text p{
+    font-size:14px ;
+    padding-right: 9%;
+    padding-left: 9%;
+    font-weight: 300;
+}
+/* Campus */ 
+.campus-photos img {
+    height: 490px;
+    border-radius: 10px 2%;
+}
+.overlay{
+    position: absolute;
+    top: 224.8%;
+    width: 346px;
+    height: 490px;
+    transition: 1s;
+    border-radius: 10px 2%;
+}
+.overlay:hover{
+    background: rgba(211, 0, 0, 0.2);
+    border-radius: 10px 2%;
+}
+.overlay h1{
+    width: 100%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    position: absolute;
+    top: 93%;
+    opacity: 0;
+    transition: 1s;
+    left: 50%;
+    bottom: 0;
+    color: white;
+    font-weight: 500;
+}
+.overlay h1:hover{
+    TOP: 50%;
+    opacity: 1;
+}
+/* Facilities */ 
+.facilites img {
+    height: 294px;
+    width: 335px;
+    border-radius: 10px 2%;
+}
+.facilities-photo h3 , .facilities-photo p{
+    margin-top: 3%;
+    float: left;
+}
+.facilities-photo p{
+    text-align:left;
+    font-size: 14px;
+    font-weight: 300;
+}
+.reviews img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    float: left;
+    margin: 10%;
+}
+.Hiba-ismaili , .Abdelkahhar-Sabour{
+    background-color: #fff3f3;
+    height: 100%;
+    width: 530px;
+}
+.Hiba-ismaili p , .Abdelkahhar-Sabour p {
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding-right: 10%;
+}
+.Hiba-ismaili .rate ,.Abdelkahhar-Sabour .rate{
+    float: left;
+    text-align: justify;
+    width: 90%;
+    margin-left: 29%;
+    padding-bottom: 2%;
+}
