@@ -83,7 +83,7 @@ nav ul li a:after{
 .visit-us a:hover{  
     background-color: #1277DC;
 }
-@media screen and (max-width : 550px) {
+@media screen and (max-width : 675px) {
     nav button{
         background: transparent;
         background-image: url("Images/menu.png") ;
