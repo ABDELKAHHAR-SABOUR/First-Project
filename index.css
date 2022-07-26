@@ -83,6 +83,61 @@ nav ul li a:after{
 .visit-us a:hover{  
     background-color: #1277DC;
 }
+@media screen and (max-width : 550px) {
+    nav button{
+        background: transparent;
+        background-image: url("Images/menu.png") ;
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 25px;
+        border: none;
+        border-radius: 5px 10%;
+        float: right;
+        margin: 10px;
+    }
+    nav ul {
+        float: right;
+        display: block;
+        margin-right: 60px;
+        z-index: 1;
+        display: none;
+    }
+    nav ul li {
+        padding-bottom: 10px;
+    }
+    nav{
+        width: 100%;
+        display: block;
+    }
+    nav img {
+        margin: 10px;
+    }
+    .introduction{
+        min-height: 120vh;
+        z-index: 2;
+    }
+    #menu{
+        border-bottom-left-radius:  100px 10%;
+        border-top-left-radius:  100px 10%; 
+        min-height: 120vh;
+        z-index: 1;
+        background-color: red;
+        width: 50%;
+        right: 0;
+        position: absolute;
+        opacity: 0.5;
+        display: none;
+        transition: 1s;
+    }
+    #menu #Close{
+        background: transparent;
+        background-image: url("Images/cross-mark.png");
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 25px;
+    }
+
+}
 /* Offers */
 /* commun code */
 .Offers , .Global-Campus , .facilites , .student-comments{
@@ -200,4 +255,58 @@ nav ul li a:after{
     width: 90%;
     margin-left: 29%;
     padding-bottom: 2%;
+}
+/*Students*/ 
+/* Contact Us */ 
+.Contact-us{
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Images/banner2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 2%;
+    min-height: 70vh;
+    text-align: center;
+    color: white;
+}
+.Contact{
+    padding-top: 100px;
+}
+.Contact h1{
+    font-size: 40px;
+}
+.Contact h2 {
+    font-size: 30px;
+}
+.Contact a {
+    border: solid 1px white;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+.Contact a:hover {
+    background-color: #1277DC; ;
+}
+.Contact h1, .Contact h2, .Contact a {
+    margin-bottom: 50px;
+}
+/*Contact us*/ 
+/* About us*/
+.About-us{
+    margin: 10% 10% auto 10%;
+    text-align: center;
+}
+.About h1{
+    font-size: 15px;
+    font-weight: 600;
+}
+.About p {
+    font-size: 13px;
+    font-weight: 300;
+
+}
+.About h1 , .About p , .About .Social-Media{
+    margin-bottom: 30px;
+}
+.Social-Media a{
+    padding-right: 10px;
 }
