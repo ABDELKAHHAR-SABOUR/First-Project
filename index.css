@@ -77,13 +77,12 @@ nav ul li a:after{
     cursor: pointer;
     list-style-type: none;
     text-decoration: none;
-    transition: 1s;
-    
+    transition: 1s;  
 }
 .visit-us a:hover{  
     background-color: #1277DC;
 }
-@media screen and (max-width : 675px) {
+@media screen and (max-width : 440px) {
     nav button{
         background: transparent;
         background-image: url("Images/menu.png") ;
@@ -119,7 +118,7 @@ nav ul li a:after{
     #menu{
         border-bottom-left-radius:  100px 10%;
         border-top-left-radius:  100px 10%; 
-        min-height: 120vh;
+        height: 100%;
         z-index: 1;
         background-color: red;
         width: 50%;
@@ -127,7 +126,6 @@ nav ul li a:after{
         position: absolute;
         opacity: 0.5;
         display: none;
-        transition: 1s;
     }
     #menu #Close{
         background: transparent;

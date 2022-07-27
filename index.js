@@ -1,14 +1,13 @@
 $(document).ready(function(){
     $("#Open").click(function(){
-        $("#menu").slideToggle("slow");
-        $("#Open").hide();
-        $("#ul_menu").show();
+      $("#menu").slideToggle("slow");
+      $("#Close").show();
+      $("#Open").hide();
+      $("#ul_menu").show("slow")
     });
-});
-$(document).ready(function(){
     $("#Close").click(function(){
-        $("#menu").slideToggle("slow");
-        $("#Open").show();
-        $("#ul_menu").hide();
+      $("#menu").slideUp("slow");
+      $("#Open").show();  
+      $("#ul_menu").slideUp()  
     });
-});
+  });
